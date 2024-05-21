@@ -3,7 +3,7 @@
   ## Description
   * In this repository, I was tasked to create a fully-functional clone of an already deployed React JS web application.
   * Original Site: [https://library-react-t7ui.vercel.app/](https://library-react-t7ui.vercel.app/)
-  * Check out the deployed project over on Heroku: [(https://](https://).
+  * Check out the deployed project over on Vercel: [https://react-ecommerce-library-clone-project.vercel.app/](https://react-ecommerce-library-clone-project.vercel.app/).
   ## Table of Contents
   * [Usage](#usage)
   * [License](#license)
