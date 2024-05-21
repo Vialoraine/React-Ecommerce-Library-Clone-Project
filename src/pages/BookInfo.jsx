@@ -50,7 +50,7 @@ export const BookInfo = ({ books }) => {
                     ipsa architecto magnam, qui eligendi sit deleniti?
                   </p>
                 </div>
-                <button className="btn">Add to cart</button>
+                <button className="btn" onClick={() => addItemToCart(book)} >Add to cart</button>
               </div>
             </div>
           </div>
