@@ -20,28 +20,55 @@ export const Cart = () => {
               <div className="cart__body">
                 <div className="cart__item">
                   <div className="cart__book">
-                    <img src="" alt="" className="cart__book--img" />
+                    <img
+                      src="https://covers.openlibrary.org/b/id/10958382-L.jpg"
+                      alt=""
+                      className="cart__book--img"
+                    />
                     <div className="cart__book--info">
-                      <span className="cart__book--title">Book Title</span>
+                      <span className="cart__book--title">Atomic Habits</span>
                       <span className="cart__book--price">$39.00</span>
                       <button className="cart__book--remove">Remove</button>
                     </div>
                   </div>
                   <div className="cart__quantity">
-                    <input type="number" className="cart__input" min={0} max={99} />
+                    <input
+                      type="number"
+                      className="cart__input"
+                      min={0}
+                      max={99}
+                    />
                   </div>
-                  <div className="cart__total">
-                    $39.00
-                  </div>
+                  <div className="cart__total">$39.00</div>
                 </div>
               </div>
-              <div className="cart__empty">
-                <img src={EmptyCart} alt="" className="cart__empty--img" />
-                <h2>You don't have any books in your cart!</h2>
-                <Link to="/books">
-                  <button className="btn">Browse books</button>
-                </Link>
+            </div>
+            <div className="total">
+              <div className="total__item total__sub-total">
+                <span>Subtotal</span>
+                <span>$39.00</span>
               </div>
+              <div className="total__item total__tax">
+                <span>Tax</span>
+                <span>$5.00</span>
+              </div>
+              <div className="total__item total__price">
+                <span>Total</span>
+                <span>$44.00</span>
+              </div>
+              <button
+                className="btn btn__checkout no-cursor"
+                onClick={() => alert(`This function hasn't been created yet.`)}
+              >
+                Proceed to checkout
+              </button>
+            </div>
+            <div className="cart__empty">
+              <img src={EmptyCart} alt="" className="cart__empty--img" />
+              <h2>You don't have any books in your cart!</h2>
+              <Link to="/books">
+                <button className="btn">Browse books</button>
+              </Link>
             </div>
           </div>
         </div>
