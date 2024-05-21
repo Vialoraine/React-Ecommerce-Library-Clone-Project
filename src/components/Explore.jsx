@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 export const Explore = () => {
   return (
@@ -8,13 +9,11 @@ export const Explore = () => {
           <h2 className="section__title">
             Explore more <span className="purple">Books</span>
           </h2>
-          <a href="/books">
-            <button className="btn">
-              Explore books
-            </button>
-          </a>
+          <Link to="/books">
+            <button className="btn">Explore books</button>
+          </Link>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
