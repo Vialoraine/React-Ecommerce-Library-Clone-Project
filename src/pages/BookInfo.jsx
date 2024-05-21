@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Rating } from "../components/ui/Rating";
 import { Price } from "../components/ui/Price";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
