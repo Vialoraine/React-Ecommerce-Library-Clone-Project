@@ -17,7 +17,7 @@ export const Book = ({ book }) => {
         </Link>
       </div>
       <Rating rating={book.rating} />
-      <Price originalPrice={book.originalPrice} salePrice={book.salePrice} />
+      <Price salePrice={book.salePrice} originalPrice={book.originalPrice} />
     </div>
   );
 };
