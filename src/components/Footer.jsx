@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="row row__column">
           <Link to="/">
             <figure className="footer__logo">
-              <img src={Logo} alt="" className="footer__logo--img" />
+              <img src={Logo} className="footer__logo--img" alt="" />
             </figure>
           </Link>
           <div className="footer__list">
@@ -24,7 +24,7 @@ export const Footer = () => {
               Cart
             </Link>
           </div>
-          <div className="footer__copyright">Copyright © 2021 Library</div>
+          <div className="footer__copyright">Copyright &copy; 2024 Library</div>
         </div>
       </div>
     </footer>

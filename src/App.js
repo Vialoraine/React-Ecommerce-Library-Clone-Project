@@ -40,10 +40,6 @@ function App() {
     return counter;
   }
 
-  useEffect(() => {
-    console.log(cart);
-  }, [cart]);
-
   return (
     <Router>
       <div className="App">

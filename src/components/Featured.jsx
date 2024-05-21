@@ -3,11 +3,6 @@ import { Book } from "./ui/Book";
 import { books } from "../data";
 
 export const Featured = () => {
-  console.log(books);
-  console.log();
-
-  function getFiveStarBooks() {}
-
   return (
     <section id="features">
       <div className="container">
@@ -18,7 +13,7 @@ export const Featured = () => {
           <div className="books">
             {books
               .filter((book) => book.rating === 5)
-              .slice(0, 4)
+              .slice(0,4)
               .map((book) => (
                 <Book book={book} key={book.id}/>
               ))}
