@@ -3,6 +3,7 @@ import { Rating } from "../components/ui/Rating";
 import { Price } from "../components/ui/Price";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useParams, Link } from "react-router-dom";
+import { Book } from "../components/ui/Book";
 
 export const BookInfo = ({ books }) => {
   const { id } = useParams();
@@ -60,10 +61,12 @@ export const BookInfo = ({ books }) => {
               <h2 className="book__selected--title--top">Recommended Books</h2>
             </div>
             <div className="books">
-              <div className="book"></div>
-              <div className="book"></div>
-              <div className="book"></div>
-              <div className="book"></div>
+              {books
+                .filter((book) => book.rating === 5 && +book.id !== +id)
+                .splice(0, 4)
+                .map((book) => (
+                  <Book book={book} key={book.id} />
+                ))}
             </div>
           </div>
         </div>
